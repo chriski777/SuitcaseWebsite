@@ -1,25 +1,25 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
+  get '/home', to: 'static_pages#home'
 
-  get 'static_pages/about'
+  get '/about', to: 'static_pages#about'
 
-  get 'static_pages/join_us'
+  get '/join_us', to: 'static_pages#join_us'
 
-  get 'static_pages/services'
+  get '/services', to: 'static_pages#services'
 
-  get 'static_pages/news'
+  get '/news', to: 'static_pages#news'
 
-  get 'static_pages/blogs'
+  get '/blogs', to: 'static_pages#blogs'
 
-  get 'static_pages/donate'
+  get '/donate', to: 'static_pages#donate'
 
-  get 'static_pages/beth_el'
+  get '/beth_el', to: 'static_pages#beth_el'
 
-  get 'static_pages/general'
+  get '/general', to: 'static_pages#general'
 
-  get 'static_pages/youth'
+  get '/youth', to: 'static_pages#youth'
 
-  get 'static_pages/women'
+  get '/women', to: 'static_pages#women'
 
   root 'static_pages#home'
 

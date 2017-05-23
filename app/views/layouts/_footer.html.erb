@@ -1,36 +1,29 @@
-<div class = "row"> <!-- (footer) Row 7 -->
- 	<footer>
- 		<div id = "footer-container">
-	 		<div class = "col-3">
-	 			<div class = "section-footer">
-	 				<h3> Our Organization </h3>
-					<ul>	
-						<li> <a href = "#" style="text-decoration:none;">About Us</a></li> <!-- Gen Info / Include Mission Statement/ Our History/ HomelessNess-->
-						<li> <a href = "#" style="text-decoration:none;">Services</a></li> <!-- General / Women's / Youth-->
-						<li> <a href = "#" style="text-decoration:none;">News</a></li> 
-						<li> <a href = "#" style="text-decoration:none;">Blog</a></li> 
-					</ul>
-				</div>
-			</div>
-			<div class = "col-3">
-				<div class = "section-footer">
-		 			<h3> Connect With Us </h3>
-					<ul>	
-						<li> <a href = "#" style="text-decoration:none;">Donate</a></li> 
-						<li> <a href = "#" style="text-decoration:none;">Join Us</a></li> 
-						<li> <a href = "#" style="text-decoration:none;">Contact Us</a></li> 
-					</ul>
-				</div>
-			</div>
-			<div class = "col-6">
-				<h2> Suitcase Clinic </h2>
-				<p> The Suitcase clinic is a student-run organization in UC Berkeley. Stay updated on social media through the links below!</p>
-					<a href = "https://www.facebook.com/suitcaseclinic"><%= image_tag("facebook.png", :alt => "facebook_icon") %></a>
-				<a href = "https://twitter.com/suitcaseclinic"><%= image_tag("twitter.svg", :alt => "twitter_icon") %></a>
-			</div>
+<footer class="footer">
+	<div class = "row">
+		<div class = "col-md-4">
+			<h3> Our Organization </h3>
+			<ul>
+				<li><%= link_to "About", about_path %></li>
+			 	<li><%= link_to "Services", services_path %></li>
+			 	<li><%= link_to "News", news_path %></li>
+			 	<li><%= link_to "Blog", blogs_path %></li>
+			</ul>
 		</div>
-		<div id = "copyright">
- 			<h3>© 2016 Suitcase Clinic. All rights reserved.</h3>
- 		</div>
- 	</footer>
-</div>
+		<div class = "col-md-4">
+			<h3> Connect with Us </h3>
+			<ul>				
+	  			<li><%= link_to "Donate", donate_path %></li>
+	  			<li><%= link_to "Join Us", join_us_path %></li>
+	  			<li><%= link_to "Contact Us", '#' %></li>
+	  		</ul>
+	  	</div>
+	  	<div class = "col-md-4">
+	  		<h2> Suitcase Clinic </h2>
+	  		<p> The Suitcase Clinic is a student-run organization in UC Berkeley. Stay updated on social media through the links below! </p>
+	  		<%= link_to image_tag("facebook.png", :alt => "facebook_icon"), "https://www.facebook.com/suitcaseclinic" %>
+	  		<%= link_to image_tag("twitter.svg", :alt => "twitter_icon"), "https://twitter.com/suitcaseclinic" %>
+	  	</div>
+	<div class = "row">
+		<small> ©2016 Suitcase Clinic. All rights reserved.</small>
+	</div>
+</footer>

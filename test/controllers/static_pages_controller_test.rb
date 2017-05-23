@@ -6,66 +6,66 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get home" do
-    get static_pages_home_url
+    get root_path
     assert_response :success
     assert_select "title", "Home | #{@base_title}"
   end
 
   test "should get about" do
-    get static_pages_about_url
+    get about_path
     assert_response :success
     assert_select "title", "About | #{@base_title}"
   end
 
   test "should get join_us" do
-    get static_pages_join_us_url
+    get join_us_path
     assert_response :success
     assert_select "title", "Join Us | #{@base_title}"
   end
 
   test "should get services" do
-    get static_pages_services_url
+    get services_path
     assert_response :success
     assert_select "title", "Services | #{@base_title}"
   end
 
   test "should get news" do
-    get static_pages_news_url
+    get news_path
     assert_response :success
     assert_select "title", "News | #{@base_title}"
   end
 
   test "should get blogs" do
-    get static_pages_blogs_url
+    get blogs_path
     assert_response :success
   end
 
   test "should get donate" do
-    get static_pages_donate_url
+    get donate_path
     assert_response :success
     assert_select "title", "Donate | #{@base_title}"
   end
 
   test "should get beth_el" do
-    get static_pages_beth_el_url
+    get beth_el_path
     assert_response :success
     assert_select "title", "Beth_El | #{@base_title}"
   end
 
   test "should get general" do
-    get static_pages_general_url
+    get general_path
     assert_response :success
     assert_select "title", "General | #{@base_title}"
   end
 
   test "should get youth" do
-    get static_pages_youth_url
+    get youth_path
     assert_response :success
     assert_select "title", "Youth | #{@base_title}"
   end
 
   test "should get women" do
-    get static_pages_women_url
+    get women_path
     assert_response :success
     assert_select "title", "Women | #{@base_title}"
   end
