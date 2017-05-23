@@ -23,6 +23,10 @@ Rails.application.routes.draw do
 
   get '/women', to: 'static_pages#women'
 
+  get '/loginScreen', to: 'static_pages#loginScreen'
+
+  get '/signup', to: 'users#new'
+
   root 'static_pages#home'
 
 end

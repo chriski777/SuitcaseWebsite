@@ -31,4 +31,7 @@ class StaticPagesController < ApplicationController
 
   def women
   end
+
+  def loginScreen
+  end
 end
