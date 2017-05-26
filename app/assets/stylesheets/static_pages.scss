@@ -1,7 +1,21 @@
+//Style Adjustments
 html,
 body, .view {
 	height: 100%;
+	text-align:center;
 }
+h2 {
+	line-weight: 500;
+}
+
+
+/* 
+*=== Home Page ====
+*/
+
+/* 
+*--- Banner/Mask ---
+*/
 .view{
     background: url("2017SpringOfficers.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -9,15 +23,42 @@ body, .view {
     -o-background-size: cover;
     background-size: cover;
 }
+.flex-center {
+    color: #fff;
+}
 
+/*
+*--- About Us ---
+*/
+#about {
+	p {
+		line-height: 2.5em;
+	}
+}
+
+/*
+*--- Our Clinics ---
+*/
+#best-features {
+	.divider-new{
+		margin-bottom: 1em;
+	}
+	h4 {
+		margin-bottom: 1em;
+	}
+}
+#scLogo {
+	display:block;
+	margin:auto;
+	padding-top: 2em;
+}
+
+
+//Footer
 footer {
   img {
 	position: relative;
 	height:10%;
 	width: 5%;
   }
-}
-
-.flex-center {
-    color: #fff;
 }

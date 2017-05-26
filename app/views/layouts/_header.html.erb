@@ -4,34 +4,25 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-          <strong><%= link_to "SuitcaseClinic", home_path, class: "navbar-brand" %></strong>
+          <%= link_to image_tag("logoHeader.png"),home_path %><strong><%= link_to "Suitcase Clinic", home_path, class: "navbar-brand" %></strong>
         <div class="collapse navbar-collapse" id="navbarNav1">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <%= link_to "Home", home_path, class: "nav-link" %>
-                </li>
-                <li class="nav-item">
-                  <%= link_to "About Us", about_path, class: "nav-link" %>
+                  <%= link_to "About", about_path, class: "nav-link" %>
                 </li>
                 <li class="nav-item">
                   <%= link_to "Services", services_path, class: "nav-link" %>
                 </li>
                 <li class="nav-item">
-                  <%= link_to "Announcements", news_path, class: "nav-link" %>
+                  <%= link_to "News", news_path, class: "nav-link" %>
                 </li>
                 <li class="nav-item">
                   <%= link_to "Blog", blogs_path, class: "nav-link" %>
                 </li>
                 <li class="nav-item">
-                  <%= link_to "Get Involved", "#", class: "nav-link" %>
-                </li>
-                <li class="nav-item">
-                  <%= link_to "Log in", "loginScreen_path", class: "nav-link" %>
+                  <%= link_to "Log in", loginScreen_path, class: "nav-link" %>
                 </li>
             </ul>
-            <form class="form-inline waves-effect waves-light">
-                <input class="form-control" type="text" placeholder="Search">
-            </form>
         </div>
     </div>
 </nav>
