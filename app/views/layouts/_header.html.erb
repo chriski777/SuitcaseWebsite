@@ -1,16 +1,38 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "SuitcaseWebsite", home_path, id: "logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-      	<li><%= link_to image_tag("logoHeader.png"),home_path %>
-		    <li><%= link_to "About Us", about_path %></li>
-		    <li><%= link_to "Services", services_path %></li>
-		    <li><%= link_to "Announcements", news_path %></li>
-		    <li><%= link_to "Blog", blogs_path %></li>
-        <li><%= link_to "Get Involved",  "#" %></li>
-        <li><%= link_to "Log in", loginScreen_path %></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<!--Navbar-->
+<nav class="navbar navbar-toggleable-md navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <strong><%= link_to "SuitcaseClinic", home_path, class: "navbar-brand" %></strong>
+        <div class="collapse navbar-collapse" id="navbarNav1">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <%= link_to "Home", home_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item">
+                  <%= link_to "About Us", about_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item">
+                  <%= link_to "Services", services_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item">
+                  <%= link_to "Announcements", news_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item">
+                  <%= link_to "Blog", blogs_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item">
+                  <%= link_to "Get Involved", "#", class: "nav-link" %>
+                </li>
+                <li class="nav-item">
+                  <%= link_to "Log in", "loginScreen_path", class: "nav-link" %>
+                </li>
+            </ul>
+            <form class="form-inline waves-effect waves-light">
+                <input class="form-control" type="text" placeholder="Search">
+            </form>
+        </div>
+    </div>
+</nav>
+<!--/.Navbar-->

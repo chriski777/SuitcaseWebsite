@@ -11,11 +11,10 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-  		<div class = "container">
   			<!-- This render is needed to utilize the _footer and _header in the layouts. (Partial Layout)-->
-  		  	<%= render "layouts/header" %>      
+        <!-- header contains the navbar !-->
+  		  <%= render "layouts/header" %>      
     		<%= yield %> 
-  		  	<%= render "layouts/footer" %>      
-    	</div>
+  		  <%= render "layouts/footer" %>      
   </body>
 </html>
