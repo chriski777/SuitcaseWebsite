@@ -46,7 +46,7 @@ $open-sans: 'Open Sans', sans-serif;
 .titleCaption {
 	position: absolute;
 	text-align: center;
-	top: 35%;
+	top: 25%;
 	left:0;
 	right:0;
 	font-family: $open-sans;
@@ -55,6 +55,38 @@ $open-sans: 'Open Sans', sans-serif;
   	font-weight: 300;
   	color: #fff;
 
+  	.positionTopThree {
+  		display: block;
+  		margin-bottom: 0.65em;
+  	}
+  	.positionTopTwo {
+  		display: block;
+  		margin-bottom: -2.0em;
+  	}
+  	.cHandle {
+  		color: transparent;
+  		display: inline-block;
+  		line-height: 1.2em;
+  	}
+  	.mini {
+  		color: transparent;
+  		display: inline-block;
+   		border: solid transparent;
+   		border-bottom: transparent;
+   		line-height: 1em;
+		transition: border-color 2s ease;
+		transition-delay: 1.25s;
+  	}
+  	.handle {
+  		width: 10%;
+  		color: transparent;
+  		display: inline-block;
+  		border-left: solid transparent;
+  		border-right: solid transparent;
+  		border-top: solid transparent;
+		transition: border-color 2s ease;
+		transition-delay: 1.25s;
+  	}
     h1 {
 	  color: #fff;
 	  font-size: 60px;
@@ -129,7 +161,9 @@ body.loaded h1:after, body.loaded h1:before {
 	opacity: 1;
 	width: 100%;
 }
-
+body.loaded .handle, body.loaded .mini{
+	border-color: #fff;
+}
 /*
 *--- About Us ---
 */
