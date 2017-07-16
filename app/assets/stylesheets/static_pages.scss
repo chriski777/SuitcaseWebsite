@@ -35,7 +35,7 @@ $open-sans: 'Open Sans', sans-serif;
     -o-background-size: cover;
     background-size: cover;
    	#banner-center {
-		background-color: rgba(0,0,0,.7);
+		background-color: rgba(0,0,0,.5);
 		color: #fff;
 		height:100%;
 	}
@@ -95,16 +95,20 @@ $open-sans: 'Open Sans', sans-serif;
     	width: 0%;
     	transition: width 1s ease;
     	transition-delay: 0.25s;
-   	}   	
-   	.leftLine {
+   	}
+   	.leftTopLine , .rightBotLine {
+		transition: border-color 2s ease;
+		transition-delay: 1.25s;
+   	} 	
+   	.leftTopLine {
    		border-left: solid transparent;
 		padding-left: .5em;
-		transition: border-color 4s ease;
+		line-height: 0em;
 	}
-	.rightLine {
+	.rightBotLine {
 		border-right: solid transparent;
 		padding-right: .5em;
-		transition: border-color 4s ease-in-out;
+		line-height: 0em;
 	}
 }
 body.loaded .allCap {
@@ -112,10 +116,13 @@ body.loaded .allCap {
 	transition: transform 0.5s ease, opacity 0.5s ease;
 	opacity: 1;
 }
-body.loaded .rightLine{
+body.loaded .rightBotLine, body.loaded .leftTopLine{
+	line-height: 2em;
+}
+body.loaded .rightBotLine {
 	border-right-color: #fff;
 }
-body.loaded .leftLine{
+body.loaded .leftTopLine { 
 	border-left-color: #fff;
 }
 body.loaded h1:after, body.loaded h1:before {
