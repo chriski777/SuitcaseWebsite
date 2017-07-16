@@ -4,13 +4,13 @@ body, .view {
 	height: 100%;
 	text-align:center;
 }
+
 h2 {
 	line-weight: 500;
 }
 ul {
 	padding:0em;
 }
-//Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
 
 // Font Variables
@@ -54,16 +54,22 @@ $open-sans: 'Open Sans', sans-serif;
     font-size: 18px;
   	font-weight: 300;
   	color: #fff;
+
     h1 {
 	  color: #fff;
 	  font-size: 60px;
 	  font-weight: 700;
 	  margin-bottom: 30px;
-	  padding: 0.35em 1em;
 	  line-height: 1.5em;
 	  display: inline-block;
+	  position: relative;
     }
-    span { 
+    .allCap {
+    	opacity: 0;
+    	transform: scale(0.70);
+    	display: inline-block;
+    }
+    .secondCap { 
     	color: #cc021b;
         font-size: 60px;
     	font-weight: 800;
@@ -73,21 +79,48 @@ $open-sans: 'Open Sans', sans-serif;
 		height: 2px;
 		content: '';
 		display: block;
+		position: absolute;
+		opacity: 0;
     }
     h1:before {
     	top:0;
     	left: 0;
+    	width: 0%;
+    	transition: width 1s ease;
+    	transition-delay: 0.25s;
     }
     h1:after { 
     	bottom: 0;
     	right:0;
-   	}
+    	width: 0%;
+    	transition: width 1s ease;
+    	transition-delay: 0.25s;
+   	}   	
+   	.leftLine {
+   		border-left: solid transparent;
+		padding-left: .5em;
+		transition: border-color 4s ease;
+	}
+	.rightLine {
+		border-right: solid transparent;
+		padding-right: .5em;
+		transition: border-color 4s ease-in-out;
+	}
 }
-.verticalLines {
-	border-left: solid #fff;
-	border-right: solid #fff;
-	padding-left: .5em;
-	padding-right: .5em;
+body.loaded .allCap {
+	transform: scale(1);
+	transition: transform 0.5s ease, opacity 0.5s ease;
+	opacity: 1;
+}
+body.loaded .rightLine{
+	border-right-color: #fff;
+}
+body.loaded .leftLine{
+	border-left-color: #fff;
+}
+body.loaded h1:after, body.loaded h1:before {
+	opacity: 1;
+	width: 100%;
 }
 
 /*
