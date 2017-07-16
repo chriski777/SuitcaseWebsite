@@ -22,7 +22,7 @@
 .navbar {
     background-color: transparent;
 }
-.nav-item {
+.navbar a {
   color: #fff;
 }
 .scrolling-navbar {
