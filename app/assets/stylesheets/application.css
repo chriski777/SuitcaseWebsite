@@ -22,54 +22,21 @@
 .navbar {
     background-color: transparent;
 }
-
+.nav-item {
+  color: #fff;
+}
 .scrolling-navbar {
     -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
     transition: background .5s ease-in-out, padding .5s ease-in-out;
 }
-
 .top-nav-collapse {
     background-color: #d9534f;
 }
-
-footer.page-footer {
-    background-color: #3c4f74;
-    margin-top: 2rem;
-}
-
 @media only screen and (max-width: 768px) {
     .navbar {
         background-color: #1C2331;
     }
 }
 
-@font-face {
-  font-family: "Roboto";
-  src: local(Roboto Thin), url("roboto/Roboto-Thin.eot");
-  src: url("roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("roboto/Roboto-Thin.woff2") format("woff2"), url("roboto/Roboto-Thin.woff") format("woff"), url("roboto/Roboto-Thin.ttf") format("truetype");
-  font-weight: 200; }
 
-@font-face {
-  font-family: "Roboto";
-  src: local(Roboto Light), url("roboto/Roboto-Light.eot");
-  src: url("roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("roboto/Roboto-Light.woff2") format("woff2"), url("roboto/Roboto-Light.woff") format("woff"), url("roboto/Roboto-Light.ttf") format("truetype");
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Roboto";
-  src: local(Roboto Regular), url("roboto/Roboto-Regular.eot");
-  src: url("roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("roboto/Roboto-Regular.woff2") format("woff2"), url("roboto/Roboto-Regular.woff") format("woff"), url("roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("roboto/Roboto-Medium.eot");
-  src: url("roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("roboto/Roboto-Medium.woff2") format("woff2"), url("roboto/Roboto-Medium.woff") format("woff"), url("roboto/Roboto-Medium.ttf") format("truetype");
-  font-weight: 500; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("roboto/Roboto-Bold.eot");
-  src: url("roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("roboto/Roboto-Bold.woff2") format("woff2"), url("roboto/Roboto-Bold.woff") format("woff"), url("roboto/Roboto-Bold.ttf") format("truetype");
-  font-weight: 700; }
