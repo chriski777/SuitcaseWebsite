@@ -74,11 +74,11 @@ $open-sans: 'Open Sans', sans-serif;
    		border: solid transparent;
    		border-bottom: transparent;
    		line-height: 1em;
-		transition: border-color 2s ease;
-		transition-delay: 1.25s;
+		  transition: border-color 2s ease;
+		  transition-delay: 1.25s;
   	}
   	.handle {
-  		width: 10%;
+  		width: 7em;
   		color: transparent;
   		display: inline-block;
   		border-left: solid transparent;
