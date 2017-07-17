@@ -126,33 +126,23 @@ $open-sans: 'Open Sans', sans-serif;
 	display: block;
 	position: absolute;
 	opacity: 0;
-  width: 100%;
+  width: 0%;
+  -moz-transition: width 1s ease;
+  -webkit-transition:width 1s ease;
+  -ms-transition: width 1s ease;
+  transition: width 1s ease;
+  -moz-transition-delay: 0.75s;
+  -webkit-transition-delay: 0.75s;
+  -ms-transition-delay: 0.75s;
+  transition-delay: 0.75s;
   }
   .allCap:before {
   	top:0;
   	left: 0;
-  	width: 0%;
-    -moz-transition: width 1s ease;
-    -webkit-transition:width 1s ease;
-    -ms-transition: width 1s ease;
-    transition: width 1s ease;
-    -moz-transition-delay: 0.25s;
-    -webkit-transition-delay: 0.25s;
-    -ms-transition-delay: 0.25s;
-    transition-delay: 0.25s;
   }
   .allCap:after { 
   	bottom: 0;
   	right:0;
-  	width: 0%;
-    -moz-transition: width 1s ease;
-    -webkit-transition:width 1s ease;
-    -ms-transition: width 1s ease;
-  	transition: width 1s ease;
-    -moz-transition-delay: 0.25s;
-    -webkit-transition-delay: 0.25s;
-    -ms-transition-delay: 0.25s;
-  	transition-delay: 0.25s;
  	}
  	.leftTopLine , .rightBotLine {
     -moz-transition: border-color 2s ease;
@@ -177,22 +167,26 @@ $open-sans: 'Open Sans', sans-serif;
     -moz-transition-delay: 1.3s;
     -webkit-transition-delay: 1.3s;
     -ms-transition-delay: 1.3s;
-    transition-delay: 1.3s
+    transition-delay: 1.3s;
 	}
 	.rightBotLine {
+    float: right;
 		border-right: solid transparent;
-    height:0em;
+    height:2em;
     display:inline-block;
     border-right-color: #fff;
-    -webkit-transition: height 1s ease;
-    -moz-transition: height 1s ease;
-    -o-transition: height 1s ease;
-    -ms-transition: height 1s ease;
-    transition: height 1s ease;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
+    -ms-transition: transform 1s;
+    transition: transform 1s;
     -moz-transition-delay: 1.3s;
     -webkit-transition-delay: 1.3s;
     -ms-transition-delay: 1.3s;
-    transition-delay: 1.3s
+    transition-delay: 1.3s;
+    margin-top: -2em;
+    transform-origin: 0 100%;
+    transform: scaleY(0);
 	}
 }
 body.loaded .allCap {
@@ -204,6 +198,9 @@ body.loaded {
   .rightBotLine, .leftTopLine{
     border-left-color: #fff;
     height:2em;
+  }
+  .rightBotLine {
+    transform: scaleY(1);
   }
 }
 body.loaded {
