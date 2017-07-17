@@ -50,97 +50,149 @@ $open-sans: 'Open Sans', sans-serif;
 	left:0;
 	right:0;
 	font-family: $open-sans;
-    text-transform: uppercase;
-    font-size: 18px;
-  	font-weight: 300;
-  	color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+	font-weight: 300;
+	color: #fff;
 
-  	.positionTopThree {
-  		display: block;
-  		margin-bottom: 0.65em;
-  	}
-  	.positionTopTwo {
-  		display: block;
-  		margin-bottom: -2.0em;
-  	}
-  	.cHandle {
-  		color: transparent;
-  		display: inline-block;
-  		line-height: 1.2em;
-  	}
-  	.mini {
-  		color: transparent;
-  		display: inline-block;
-   		border: solid transparent;
-   		border-bottom: transparent;
-   		line-height: 1em;
-		  transition: border-color 2s ease;
-		  transition-delay: 1.25s;
-  	}
-  	.handle {
-  		width: 7em;
-  		color: transparent;
-  		display: inline-block;
-  		border-left: solid transparent;
-  		border-right: solid transparent;
-  		border-top: solid transparent;
-		transition: border-color 2s ease;
-		transition-delay: 1.25s;
-  	}
-    h1 {
-	  color: #fff;
-	  font-size: 60px;
-	  font-weight: 700;
-	  margin-bottom: 30px;
-	  line-height: 1.5em;
-	  display: inline-block;
-	  position: relative;
-    }
-    .allCap {
-    	opacity: 0;
-    	transform: scale(0.70);
-    	display: inline-block;
-    }
-    .secondCap { 
-    	color: #cc021b;
-        font-size: 60px;
-    	font-weight: 800;
-    }
-    h1:before,h1:after{
-		background: #fff;
-		height: 2px;
-		content: '';
+	.positionTopThree {
 		display: block;
-		position: absolute;
-		opacity: 0;
-    }
-    h1:before {
-    	top:0;
-    	left: 0;
-    	width: 0%;
-    	transition: width 1s ease;
-    	transition-delay: 0.25s;
-    }
-    h1:after { 
-    	bottom: 0;
-    	right:0;
-    	width: 0%;
-    	transition: width 1s ease;
-    	transition-delay: 0.25s;
-   	}
-   	.leftTopLine , .rightBotLine {
+		margin-bottom: 0.65em;
+	}
+	.positionTopTwo {
+		display: block;
+		margin-bottom: -2.0em;
+	}
+	.cHandle {
+		color: transparent;
+		display: inline-block;
+		line-height: 1.2em;
+	}
+	.mini {
+		color: transparent;
+		display: inline-block;
+ 		border: solid transparent;
+ 		border-bottom: transparent;
+ 		line-height: 1em;
+    -moz-transition: border-color 2s ease;
+    -webkit-transition:border-color 2s ease;
+    -ms-transition: border-color 2s ease;
+    transition: border-color 2s ease;
+    -moz-transition-delay: 1.25s;
+    -webkit-transition-delay: 1.25s;
+    -ms-transition-delay: 1.25s;
+    transition-delay: 1.25s;
+	}
+	.handle {
+		width: 7em;
+		color: transparent;
+		display: inline-block;
+		border-left: solid transparent;
+		border-right: solid transparent;
+		border-top: solid transparent;
+    -moz-transition: border-color 2s ease;
+    -webkit-transition:border-color 2s ease;
+    -ms-transition: border-color 2s ease;
 		transition: border-color 2s ease;
+    -moz-transition-delay: 1.25s;
+    -webkit-transition-delay: 1.25s;
+    -ms-transition-delay: 1.25s;
 		transition-delay: 1.25s;
-   	} 	
-   	.leftTopLine {
-   		border-left: solid transparent;
-		padding-left: .5em;
-		line-height: 0em;
+	}
+  h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 2em;
+  display: inline-block;
+  position: relative;
+  }
+  .allCap {
+  	opacity: 0;
+  	transform: scale(0.70);
+  	display: block;
+    padding:0em 0.5em;
+  }
+  .secondCap { 
+  	color: #cc021b;
+      font-size: 60px;
+  	font-weight: 800;
+  }
+  .allCap:before,.allCap:after {
+	background: #fff;
+	height: 2px;
+	content: '';
+	display: block;
+	position: absolute;
+	opacity: 0;
+  width: 100%;
+  }
+  .allCap:before {
+  	top:0;
+  	left: 0;
+  	width: 0%;
+    -moz-transition: width 1s ease;
+    -webkit-transition:width 1s ease;
+    -ms-transition: width 1s ease;
+    transition: width 1s ease;
+    -moz-transition-delay: 0.25s;
+    -webkit-transition-delay: 0.25s;
+    -ms-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+  }
+  .allCap:after { 
+  	bottom: 0;
+  	right:0;
+  	width: 0%;
+    -moz-transition: width 1s ease;
+    -webkit-transition:width 1s ease;
+    -ms-transition: width 1s ease;
+  	transition: width 1s ease;
+    -moz-transition-delay: 0.25s;
+    -webkit-transition-delay: 0.25s;
+    -ms-transition-delay: 0.25s;
+  	transition-delay: 0.25s;
+ 	}
+ 	.leftTopLine , .rightBotLine {
+    -moz-transition: border-color 2s ease;
+    -webkit-transition: border-color 2s ease;
+    -ms-transition: border-color 2s ease;
+  	transition: border-color 2s ease;
+    -moz-transition-delay: 1.25s;
+    -webkit-transition-delay: 1.25s;
+    -ms-transition-delay: 1.25s;
+  	transition-delay: 1.25s;
+ 	} 	
+ 	.leftTopLine {
+    border-left: solid transparent;
+    height:0em;
+    display:inline-block;
+    border-right-color: #fff;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    transition: height 1s ease;
+    -moz-transition-delay: 1.3s;
+    -webkit-transition-delay: 1.3s;
+    -ms-transition-delay: 1.3s;
+    transition-delay: 1.3s
 	}
 	.rightBotLine {
 		border-right: solid transparent;
-		padding-right: .5em;
-		line-height: 0em;
+    height:0em;
+    display:inline-block;
+    border-right-color: #fff;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    transition: height 1s ease;
+    -moz-transition-delay: 1.3s;
+    -webkit-transition-delay: 1.3s;
+    -ms-transition-delay: 1.3s;
+    transition-delay: 1.3s
 	}
 }
 body.loaded .allCap {
@@ -148,18 +200,17 @@ body.loaded .allCap {
 	transition: transform 0.5s ease, opacity 0.5s ease;
 	opacity: 1;
 }
-body.loaded .rightBotLine, body.loaded .leftTopLine{
-	line-height: 2em;
+body.loaded {
+  .rightBotLine, .leftTopLine{
+    border-left-color: #fff;
+    height:2em;
+  }
 }
-body.loaded .rightBotLine {
-	border-right-color: #fff;
-}
-body.loaded .leftTopLine { 
-	border-left-color: #fff;
-}
-body.loaded h1:after, body.loaded h1:before {
-	opacity: 1;
-	width: 100%;
+body.loaded {
+  .allCap:before, .allCap:after{
+  	opacity: 1;
+  	width: 100%;
+  }
 }
 body.loaded .handle, body.loaded .mini{
 	border-color: #fff;

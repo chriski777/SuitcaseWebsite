@@ -21,15 +21,28 @@
 
 .navbar {
     background-color: transparent;
-    strong {
-        margin-left: -3em;
-    }
+}
+.container strong {
+    margin-left: -4em;
+}
+#navbarNav1 {
+    margin-right: -4em;
 }
 .navbar a {
   color: #fff;
 }
+.ml-auto a:after {
+    display:block;
+    content: "";
+    border-bottom: 1px solid #fff;
+    transform: scaleX(0);  
+    transition: transform 0.15s ease-in-out;
+}
 .navbar a:hover {
-	color: grey;
+	color: #cccccc;
+}
+.ml-auto a:hover:after {
+    transform: scaleX(1);
 }
 .navbar-logo { 
     width:27.5%;
