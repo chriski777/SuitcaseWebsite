@@ -46,7 +46,7 @@ $open-sans: 'Open Sans', sans-serif;
 .titleCaption {
 	position: absolute;
 	text-align: center;
-	top: 25%;
+	top: 30%;
 	left:0;
 	right:0;
 	font-family: $open-sans;
@@ -54,7 +54,18 @@ $open-sans: 'Open Sans', sans-serif;
   font-size: 18px;
 	font-weight: 300;
 	color: #fff;
-
+  p {
+    top:30%;
+    -moz-transition: transform 0.5s ease, opacity 1s ease;
+    -webkit-transition: transform 0.5s ease, opacity 1s ease;
+    -ms-transition: transform 0.5s ease, opacity 1s ease;
+    transition: transform 0.5s ease, opacity 1s ease;
+    -moz-transition-delay: 2.25s;
+    -webkit-transition-delay: 2.25s;
+    -ms-transition-delay: 2.25s;
+    transition-delay: 2.25s;
+    opacity:0;
+  }
 	.positionTopThree {
 		display: block;
 		margin-bottom: -0.6em;
@@ -86,10 +97,10 @@ $open-sans: 'Open Sans', sans-serif;
  		border: solid transparent;
  		border-bottom: transparent;
  		line-height: 1em;
-    -moz-transition: border-color 2s ease;
-    -webkit-transition:border-color 2s ease;
-    -ms-transition: border-color 2s ease;
-    transition: border-color 2s ease;
+    -moz-transition: border-color 1s ease;
+    -webkit-transition:border-color 1s ease;
+    -ms-transition: border-color 1s ease;
+    transition: border-color 1s ease;
     -moz-transition-delay: 1.75s;
     -webkit-transition-delay: 1.75s;
     -ms-transition-delay: 1.75s;
@@ -102,10 +113,10 @@ $open-sans: 'Open Sans', sans-serif;
 		border-left: solid transparent;
 		border-right: solid transparent;
 		border-top: solid transparent;
-    -moz-transition: border-color 2s ease;
-    -webkit-transition:border-color 2s ease;
-    -ms-transition: border-color 2s ease;
-		transition: border-color 2s ease;
+    -moz-transition: border-color 1s ease;
+    -webkit-transition:border-color 1s ease;
+    -ms-transition: border-color 1s ease;
+		transition: border-color 1s ease;
     -moz-transition-delay: 1.75s;
     -webkit-transition-delay: 1.75s;
     -ms-transition-delay: 1.75s;
@@ -125,6 +136,10 @@ $open-sans: 'Open Sans', sans-serif;
   	transform: scale(0.70);
   	display: block;
     padding:0em 0.5em;
+    -moz-transition: transform 0.5s ease, opacity 0.25s ease;
+    -webkit-transition: transform 0.5s ease, opacity 0.25s ease;
+    -ms-transition: transform 0.5s ease, opacity 0.25s ease;
+    transition: transform 0.5s ease, opacity 0.25s ease;
   }
   .secondCap { 
   	color: #cc021b;
@@ -219,14 +234,14 @@ $open-sans: 'Open Sans', sans-serif;
 	position: absolute;
 	opacity: 0;
   width: 0%;
-  -moz-transition: width 1s ease;
-  -webkit-transition:width 1s ease;
-  -ms-transition: width 1s ease;
-  transition: width 1s ease;
-  -moz-transition-delay: 0.75s;
-  -webkit-transition-delay: 0.75s;
-  -ms-transition-delay: 0.75s;
-  transition-delay: 0.75s;
+  -moz-transition: width 0.75s ease;
+  -webkit-transition:width 0.75s ease;
+  -ms-transition: width 0.75s ease;
+  transition: width 0.75s ease;
+  -moz-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+  transition-delay: 0.5s;
   }
   .allCap:before {
   	top:0;
@@ -237,14 +252,14 @@ $open-sans: 'Open Sans', sans-serif;
   	right:0;
  	}
  	.leftTopLine , .rightBotLine {
-    -moz-transition: border-color 1s ease;
-    -webkit-transition: border-color 1s ease;
-    -ms-transition: border-color 1s ease;
-  	transition: border-color 1s ease;
-    -moz-transition-delay: 1.25s;
-    -webkit-transition-delay: 1.25s;
-    -ms-transition-delay: 1.25s;
-  	transition-delay: 1.25s;
+    -moz-transition: border-color 0.25s ease;
+    -webkit-transition: border-color 0.25s ease;
+    -ms-transition: border-color 0.25s ease;
+  	transition: border-color 0.25s ease;
+    -moz-transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+  	transition-delay: 1s;
  	} 	
  	.leftTopLine {
     border-left: solid transparent;
@@ -281,9 +296,8 @@ $open-sans: 'Open Sans', sans-serif;
     transform: scaleY(0);
 	}
 }
-body.loaded .allCap {
+body.loaded .allCap, body.loaded p {
 	transform: scale(1);
-	transition: transform 0.5s ease, opacity 0.5s ease;
 	opacity: 1;
 }
 body.loaded {
