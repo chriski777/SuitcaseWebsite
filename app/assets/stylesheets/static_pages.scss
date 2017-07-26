@@ -57,16 +57,28 @@ $open-sans: 'Open Sans', sans-serif;
 
 	.positionTopThree {
 		display: block;
-		margin-bottom: 0.65em;
+		margin-bottom: -0.6em;
 	}
 	.positionTopTwo {
 		display: block;
 		margin-bottom: -2.0em;
 	}
 	.cHandle {
-		color: transparent;
+    position: relative;
+		background-color: transparent;
+    text-align:center;
 		display: inline-block;
-		line-height: 1.2em;
+		line-height: 1.3em;
+    min-height: 1.3em;
+    width: 4.5em;
+    -moz-transition: background-color 1s ease;
+    transition: background-color 1s ease;
+    -webkit-transition: background-color 1s ease;
+    -ms-transition: background-color 1s ease;
+    -moz-transition-delay: 2.25s;
+    -webkit-transition-delay: 2.25s;
+    -ms-transition-delay: 2.25s;
+    transition-delay: 2.25s;
 	}
 	.mini {
 		color: transparent;
@@ -78,10 +90,10 @@ $open-sans: 'Open Sans', sans-serif;
     -webkit-transition:border-color 2s ease;
     -ms-transition: border-color 2s ease;
     transition: border-color 2s ease;
-    -moz-transition-delay: 1.25s;
-    -webkit-transition-delay: 1.25s;
-    -ms-transition-delay: 1.25s;
-    transition-delay: 1.25s;
+    -moz-transition-delay: 1.75s;
+    -webkit-transition-delay: 1.75s;
+    -ms-transition-delay: 1.75s;
+    transition-delay: 1.75s;
 	}
 	.handle {
 		width: 7em;
@@ -94,10 +106,10 @@ $open-sans: 'Open Sans', sans-serif;
     -webkit-transition:border-color 2s ease;
     -ms-transition: border-color 2s ease;
 		transition: border-color 2s ease;
-    -moz-transition-delay: 1.25s;
-    -webkit-transition-delay: 1.25s;
-    -ms-transition-delay: 1.25s;
-		transition-delay: 1.25s;
+    -moz-transition-delay: 1.75s;
+    -webkit-transition-delay: 1.75s;
+    -ms-transition-delay: 1.75s;
+		transition-delay: 1.75s;
 	}
   h1 {
   color: #fff;
@@ -116,9 +128,89 @@ $open-sans: 'Open Sans', sans-serif;
   }
   .secondCap { 
   	color: #cc021b;
-      font-size: 60px;
+    font-size: 60px;
   	font-weight: 800;
   }
+  .rightTopCorner {
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-style: solid;
+    border-width: 0 0.5em 0.5em 0;
+    border-color: transparent transparent transparent transparent;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    -moz-transition: border-color 1s ease;
+    -webkit-transition: border-color 1s ease;
+    -ms-transition: border-color 1s ease;
+    transition: border-color 1s ease;
+     -moz-transition-delay: 2.25s;
+    -webkit-transition-delay: 2.25s;
+    -ms-transition-delay: 2.25s;
+    transition-delay: 2.25s;
+  }
+  .leftTopCorner {
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-style: solid;
+    border-width: 0.5em 0.5em 0em 0;
+    border-color: transparent transparent transparent transparent;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    -moz-transition: border-color 1s ease;
+    -webkit-transition: border-color 1s ease;
+    -ms-transition: border-color 1s ease;
+    transition: border-color 1s ease;
+     -moz-transition-delay: 2.25s;
+    -webkit-transition-delay: 2.25s;
+    -ms-transition-delay: 2.25s;
+    transition-delay: 2.25s;
+  }
+  .leftBotCorner {
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-style: solid;
+    border-width: 0.5em 0em 0em 0.5em;
+    border-color: transparent transparent transparent transparent;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    -moz-transition: border-color 1s ease;
+    -webkit-transition: border-color 1s ease;
+    -ms-transition: border-color 1s ease;
+    transition: border-color 1s ease;
+     -moz-transition-delay: 2.25s;
+    -webkit-transition-delay: 2.25s;
+    -ms-transition-delay: 2.25s;
+    transition-delay: 2.25s;
+  }
+  .rightBotCorner {
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-style: solid;
+    border-width: 0 0em 0.5em 0.5em;
+    border-color: transparent transparent transparent transparent;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    -moz-transition: border-color 1s ease;
+    -webkit-transition: border-color 1s ease;
+    -ms-transition: border-color 1s ease;
+    transition: border-color 1s ease;
+     -moz-transition-delay: 2.25s;
+    -webkit-transition-delay: 2.25s;
+    -ms-transition-delay: 2.25s;
+    transition-delay: 2.25s;
+  }  
   .allCap:before,.allCap:after {
 	background: #fff;
 	height: 2px;
@@ -145,10 +237,10 @@ $open-sans: 'Open Sans', sans-serif;
   	right:0;
  	}
  	.leftTopLine , .rightBotLine {
-    -moz-transition: border-color 2s ease;
-    -webkit-transition: border-color 2s ease;
-    -ms-transition: border-color 2s ease;
-  	transition: border-color 2s ease;
+    -moz-transition: border-color 1s ease;
+    -webkit-transition: border-color 1s ease;
+    -ms-transition: border-color 1s ease;
+  	transition: border-color 1s ease;
     -moz-transition-delay: 1.25s;
     -webkit-transition-delay: 1.25s;
     -ms-transition-delay: 1.25s;
@@ -211,6 +303,23 @@ body.loaded {
 }
 body.loaded .handle, body.loaded .mini{
 	border-color: #fff;
+}
+body.loaded {
+  .cHandle{  
+    background-color: #8B4513;
+  }
+  .rightBotCorner{
+    border-color: transparent transparent #da0039 transparent;
+  }
+  .leftBotCorner {
+    border-color: transparent transparent transparent #da0039;
+  }
+  .rightTopCorner{
+    border-color: transparent #da0039 transparent transparent;    
+  }
+  .leftTopCorner{
+    border-color: #da0039 transparent transparent transparent;
+  }
 }
 /*
 *--- About Us ---
