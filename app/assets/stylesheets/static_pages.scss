@@ -67,7 +67,7 @@ $open-sans: 'Lato', sans-serif;
     -webkit-transition-delay: 1.75s;
     -ms-transition-delay: 1.75s;
     transition-delay: 1.75s;
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
     opacity:0;
     font-weight:400;
   }
@@ -317,6 +317,23 @@ $open-sans: 'Lato', sans-serif;
     transition-delay: 1.75s;
     font-weight:900;
   }
+  .fa { 
+    margin-top: 6.5em;
+    color: white;
+    opacity: 0;
+    text-decoration: none; 
+    padding: 0.6em,1em;
+    border: 2px solid #b4b4b4;
+    border-radius: 50%;
+    -moz-transition: border-color 2s ease;
+    -webkit-transition: border-color 2s ease;
+    -ms-transition: border-color 2s ease;
+    transition: border-color 2s ease;
+    -moz-transition-delay: 1.75s;
+    -webkit-transition-delay: 1.75s;
+    -ms-transition-delay: 1.75s;
+    transition-delay: 1.75s;
+   }
 }
 body.loaded .allCap, body.loaded p {
 	transform: scale(1);
@@ -358,6 +375,9 @@ body.loaded {
   }
   .titleCaption {
     .btn {
+      opacity: 1;
+    }
+    .fa {
       opacity: 1;
     }
   }
