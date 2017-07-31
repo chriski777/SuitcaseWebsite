@@ -320,19 +320,13 @@ $open-sans: 'Lato', sans-serif;
   .fa { 
     margin-top: 6.5em;
     color: white;
-    opacity: 0;
     text-decoration: none; 
-    padding: 0.6em,1em;
     border: 2px solid #b4b4b4;
     border-radius: 50%;
-    -moz-transition: border-color 2s ease;
-    -webkit-transition: border-color 2s ease;
-    -ms-transition: border-color 2s ease;
-    transition: border-color 2s ease;
-    -moz-transition-delay: 1.75s;
-    -webkit-transition-delay: 1.75s;
-    -ms-transition-delay: 1.75s;
-    transition-delay: 1.75s;
+    width: 2em;
+    height: 2em;  
+    text-align: center;
+
    }
 }
 body.loaded .allCap, body.loaded p {
@@ -375,9 +369,6 @@ body.loaded {
   }
   .titleCaption {
     .btn {
-      opacity: 1;
-    }
-    .fa {
       opacity: 1;
     }
   }
