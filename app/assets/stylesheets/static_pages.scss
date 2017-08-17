@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300, 40, 700, 900');
+
+$jared-lato: 'Lato', sans-serif;
+
 //Style Adjustments
 html,
-body, .view {
+body, .view, .aboutView {
 	height: 100%;
 	text-align:center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: $jared-lato;
 }
 
 h2 {
@@ -13,22 +18,11 @@ h2 {
 ul {
 	padding:0em;
 }
-@import url('https://fonts.googleapis.com/css?family=Lato:300, 40, 700, 900');
-
-$open-sans: 'Lato', sans-serif;
-
-
-/* 
-*=== NavBar ====
-*/
 
 /* 
 *=== Home Page ====
 */
 
-/* 
-*--- Banner/Mask ---
-*/
 .view{
     background:
     url("2017SpringOfficers.jpg")no-repeat center center fixed;
@@ -36,11 +30,10 @@ $open-sans: 'Lato', sans-serif;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
    	#banner-center {
-		background-color: rgba(0,0,0,.5);
-		color: #fff;
-		height:100%;
+  		background-color: rgba(0,0,0,.5);
+  		color: #fff;
+  		height:100%;
 	  }
     ul {
     	list-style-type: none;
@@ -52,13 +45,13 @@ $open-sans: 'Lato', sans-serif;
 	top: 30%;
 	left:0;
 	right:0;
-	font-family: $open-sans;
+	font-family: $jared-lato;
   text-transform: uppercase;
   font-size: 18px;
 	font-weight: 300;
 	color: #fff;
   p {
-    top:30%;
+    margin-top: -0.5em;
     -moz-transition: transform 0.5s ease, opacity 2s ease;
     -webkit-transition: transform 0.5s ease, opacity 2s ease;
     -ms-transition: transform 0.5s ease, opacity 2s ease;
@@ -233,21 +226,21 @@ $open-sans: 'Lato', sans-serif;
     transition-delay: 1.75s;
   }  
   .allCap:before,.allCap:after {
-	background: #fff;
-	height: 2px;
-	content: '';
-	display: block;
-	position: absolute;
-	opacity: 0;
-  width: 0%;
-  -moz-transition: width 0.75s ease;
-  -webkit-transition:width 0.75s ease;
-  -ms-transition: width 0.75s ease;
-  transition: width 0.75s ease;
-  -moz-transition-delay: 0.5s;
-  -webkit-transition-delay: 0.5s;
-  -ms-transition-delay: 0.5s;
-  transition-delay: 0.5s;
+    background: #fff;
+    height: 2px;
+    content: '';
+    display: block;
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    -moz-transition: width 0.75s ease;
+    -webkit-transition:width 0.75s ease;
+    -ms-transition: width 0.75s ease;
+    transition: width 0.75s ease;
+    -moz-transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    transition-delay: 0.5s;
   }
   .allCap:before {
   	top:0;
@@ -316,17 +309,41 @@ $open-sans: 'Lato', sans-serif;
     -ms-transition-delay: 1.75s;
     transition-delay: 1.75s;
     font-weight:900;
+    outline:none;
+  }
+  .btn-primary:focus{
+    box-shadow: none; 
+    -webkit-box-shadow: none;
+    outline: none;
+  }
+  .btn-primary:hover{
+    background-color: rgba(0,0,0,0.3);
+    color: #cccccc;
   }
   .fa { 
-    margin-top: 6.5em;
+    margin-top: 5.0em;
     color: white;
     text-decoration: none; 
-    border: 2px solid #b4b4b4;
-    border-radius: 50%;
-    width: 2em;
-    height: 2em;  
+    border-radius: 100%;  
+    display:inline-block;
+    border: 0.1em solid white;
     text-align: center;
-
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    opacity: 0;
+    -moz-transition: transform 0.5s ease, opacity 2s ease;
+    -webkit-transition: transform 0.5s ease, opacity 2s ease;
+    -ms-transition: transform 0.5s ease, opacity 2s ease;
+    transition: transform 0.5s ease, opacity 2s ease;
+    -moz-transition-delay: 1.75s;
+    -webkit-transition-delay: 1.75s;
+    -ms-transition-delay: 1.75s;
+    transition-delay: 1.75s;
+   }
+   .fa:hover {
+    color: #cccccc;
+    border: 0.1em solid #cccccc;
    }
 }
 body.loaded .allCap, body.loaded p {
@@ -372,13 +389,17 @@ body.loaded {
       opacity: 1;
     }
   }
+  .fa {
+    opacity: 1;
+  }
 }
 /*
 *--- About Us ---
 */
 #about {
+  padding-top: 5em;
 	p {
-		line-height: 2.5em;
+		line-height: 2.0em;
 	}
 }
 
@@ -399,8 +420,21 @@ body.loaded {
 	padding-top: 2em;
 }
 
+/*
+*--- About Page --- 
+*/
+.aboutView{
+    background:
+    url("homageBanner.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
-//Footer
+
+
+
 footer {
   img {
 	position: relative;
