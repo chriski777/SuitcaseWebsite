@@ -18,6 +18,7 @@
  */
  
 /* Navigation*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:700');
 
 .navbar {
     background-color: transparent;
@@ -27,10 +28,11 @@
 }
 .navbar.fixed{
     position: fixed;
-    background-color: #1d242a;
+    background-color: rgba(0,0,0,.75);
 }
 .container strong {
-    margin-left: -4em;
+    margin-left: -5em;
+    font-family: 'PT Sans', sans-serif;
 }
 #navbarNav1 {
     margin-right: -4em;
@@ -52,7 +54,7 @@
     transform: scaleX(1);
 }
 .navbar-logo { 
-    width:27.5%;
+    width:25%;
     display: inline-block;
     padding-right: 0.75em;
 }

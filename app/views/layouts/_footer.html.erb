@@ -1,29 +1,21 @@
 <footer class="footer">
-	<div class = "row">
-		<div class = "col-md-4">
-			<h3> Our Organization </h3>
-			<ul>
-				<li><%= link_to "About", about_path %></li>
-			 	<li><%= link_to "Services", services_path %></li>
-			 	<li><%= link_to "News", news_path %></li>
-			 	<li><%= link_to "Blog", blogs_path %></li>
-			</ul>
-		</div>
-		<div class = "col-md-4">
-			<h3> Connect with Us </h3>
-			<ul>				
-	  			<li><%= link_to "Donate", donate_path %></li>
-	  			<li><%= link_to "Join Us", join_us_path %></li>
-	  			<li><%= link_to "Contact Us", '#' %></li>
-	  		</ul>
-	  	</div>
-	  	<div class = "col-md-4">
-	  		<h2> Suitcase Clinic </h2>
-	  		<p> The Suitcase Clinic is a student-run organization in UC Berkeley. Stay updated on social media through the links below! </p>
-	  		<%= link_to image_tag("facebook.png", :alt => "facebook_icon"), "https://www.facebook.com/suitcaseclinic" %>
-	  		<%= link_to image_tag("twitter.svg", :alt => "twitter_icon"), "https://twitter.com/suitcaseclinic" %>
-	  	</div>
-	<div class = "row">
-		<small> ©2016 Suitcase Clinic. All rights reserved.</small>
-	</div>
+		<h3> Our Organization </h3>
+		<ul>
+			<li><%= link_to "About", about_path %></li>
+		 	<li><%= link_to "Services", services_path %></li>
+		 	<li><%= link_to "News", news_path %></li>
+		 	<li><%= link_to "Blog", blogs_path %></li>
+		</ul>
+		<h3> Connect with Us </h3>
+		<ul>				
+  			<li><%= link_to "Donate", donate_path %></li>
+  			<li><%= link_to "Join Us", join_us_path %></li>
+  			<li><%= link_to "Contact Us", '#' %></li>
+  		</ul>
+
+  		<h2> Suitcase Clinic </h2>
+  		<p> The Suitcase Clinic is a student-run organization in UC Berkeley. Stay updated on social media through the links below! </p>
+  		<%= link_to image_tag("facebook.png", :alt => "facebook_icon"), "https://www.facebook.com/suitcaseclinic" %>
+  		<%= link_to image_tag("twitter.svg", :alt => "twitter_icon"), "https://twitter.com/suitcaseclinic" %>
+	<small> ©2016 Suitcase Clinic. All rights reserved.</small>
 </footer>
