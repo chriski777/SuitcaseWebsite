@@ -31,8 +31,11 @@
     background-color: rgba(0,0,0,.75);
 }
 .container strong {
-    margin-left: -5em;
-    font-family: 'PT Sans', sans-serif;
+    margin-left: -4em;
+}
+.navbar-brand { 
+    font-family: 'PT Sans', sans-serif;    
+    font-size: 1.5em;
 }
 #navbarNav1 {
     margin-right: -4em;
