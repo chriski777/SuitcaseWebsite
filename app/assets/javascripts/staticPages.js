@@ -6,6 +6,7 @@ $( document ).on('turbolinks:load', function() {
 		console.log('we made it');
 	}
 	$body.addClass('loaded');
+
   //to enable smooth scrolling upon anchor click
   $("a").on('click', function(event) {
     //this.hash must override default behavior
@@ -22,6 +23,14 @@ $( document ).on('turbolinks:load', function() {
         window.location.hash = hash;
       });
     } 
+  });
+  var bannerHeight = $('.view').height();
+  $(window).scroll(function(){                          
+    if ($(this).scrollTop() >= bannerHeight) {
+        $('.navbar').addClass('fixed');
+    } else {
+        $('.navbar').removeClass('fixed');
+    }
   });
 });
 
