@@ -69,6 +69,12 @@
 .top-nav-collapse {
     background-color: #d9534f;
 }
+.fb_icon {
+    width: 2.5%;
+}
+.t_icon { 
+    width: 2.5%; 
+}
 @media only screen and (max-width: 768px) {
     .navbar {
         background-color: #1C2331;
