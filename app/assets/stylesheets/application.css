@@ -69,11 +69,33 @@
 .top-nav-collapse {
     background-color: #d9534f;
 }
-.fb_icon {
-    width: 2.5%;
+
+/* Footer*/
+.social{
+    width: 7.5%;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
 }
-.t_icon { 
-    width: 2.5%; 
+.social:hover {
+     -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+     -o-transform: scale(1.2);
+ }
+footer {
+    margin-top: 
+    background-color: #fff;
+    text-align: center;
+}
+a {
+    color: rgba(44,62,80,0.9);
+
+}
+a:hover {
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
 }
 @media only screen and (max-width: 768px) {
     .navbar {
