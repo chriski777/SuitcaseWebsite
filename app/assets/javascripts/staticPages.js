@@ -24,6 +24,7 @@ $( document ).on('turbolinks:load', function() {
       });
     } 
   });
+  //Fixed NavBar that appears only after banner height is reached
   var bannerHeight = $('.view').height();
   $(window).scroll(function(){                          
     if ($(this).scrollTop() >= bannerHeight) {
@@ -32,5 +33,6 @@ $( document ).on('turbolinks:load', function() {
         $('.navbar').removeClass('fixed');
     }
   });
+  
 });
 

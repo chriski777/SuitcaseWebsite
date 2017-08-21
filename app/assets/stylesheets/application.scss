@@ -36,7 +36,14 @@
 .navbar-brand { 
     font-family: 'Scope One', serif;
     font-size: 1.5em;
+}
+.navbar-brand:before {
+    color: #fff;
+    content: "Suitcase ";
     margin-left: -0.35em
+}
+.navbar-brand:hover:before {
+    color: #cccccc;
 }
 #navbarNav1 {
     margin-right: -4em;
