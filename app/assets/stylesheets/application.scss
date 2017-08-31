@@ -20,6 +20,11 @@
 /* Navigation*/
 @import url('https://fonts.googleapis.com/css?family=Lato:300, 40, 700, 900');
 @import url('https://fonts.googleapis.com/css?family=Scope+One&subset=latin-ext');
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url(/assets/product_Sans.ttf) format("truetype");
+}
 .navbar {
     background-color: transparent;
     font-family: 'Lato', sans-serif;
@@ -34,7 +39,7 @@
     margin-left: -4em;
 }
 .navbar-brand { 
-    font-family: 'Scope One', serif;
+    font-family: 'Product Sans', serif;
     font-size: 1.5em;
 }
 .navbar-brand:before {
