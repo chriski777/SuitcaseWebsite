@@ -6,7 +6,7 @@ $( document ).on('turbolinks:load', function() {
 		console.log('we made it');
 	}
 	$body.addClass('loaded');
-
+  var navBarHeight = $('.navbar').outerHeight(true);
   //to enable smooth scrolling upon anchor click
   $("a").on('click', function(event) {
     //this.hash must override default behavior
@@ -17,7 +17,7 @@ $( document ).on('turbolinks:load', function() {
       var hash = this.hash;
       // Using jQuery's animate() method to implement smooth scroll
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top - navBarHeight
       }, 800, function(){ 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -27,7 +27,7 @@ $( document ).on('turbolinks:load', function() {
   //Fixed NavBar that appears only after banner height is reached
   var bannerHeight = $('.view').height();
   $(window).scroll(function(){                          
-    if ($(this).scrollTop() >= bannerHeight) {
+    if ($(this).scrollTop() >= bannerHeight - navBarHeight) {
         $('.navbar').addClass('fixed');
     } else {
         $('.navbar').removeClass('fixed');
