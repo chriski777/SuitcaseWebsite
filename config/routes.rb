@@ -19,9 +19,11 @@ Rails.application.routes.draw do
 
   get '/general', to: 'static_pages#general'
 
-  get '/youth', to: 'static_pages#youth'
+  get '/youthLGBTQ', to: 'static_pages#youthLGBTQ+'
 
-  get '/women', to: 'static_pages#women'
+  get '/womxn', to: 'static_pages#womxn'
+
+  get '/contact', to: 'static_pages#contact'
 
   get '/loginScreen', to: 'static_pages#loginScreen'
 

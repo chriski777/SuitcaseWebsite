@@ -415,17 +415,28 @@ body.loaded {
 #about {
   padding-top: 4em;
   text-align: left;
+  margin-left: 4em;
+  margin-right:4em;
   h1 {
     margin-bottom: 0.35em;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
   }
 	p {
     margin-top: 3.5em;
+    margin-bottom: 3.5em;
 		line-height: 2.0em;
 	}
-  margin-left: 4em;
-  margin-right:4em;
+  .about-img{
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,.4)
+
+  }
+  #about-1 {
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+  }
 }
 
 /*
