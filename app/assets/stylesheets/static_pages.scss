@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
 $jared-lato: 'Lato', sans-serif;
 //Style Adjustments
 html,
@@ -13,11 +13,11 @@ body, .view, .aboutView {
 }
 h1 {
   font-family: $jared-lato;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 2em;
 }
 p {
-  font-weight: 300;
+  font-weight: 400;
 }
 h2 {
 	line-weight: 500;
@@ -26,28 +26,27 @@ ul {
 	padding:0em;
 }
 
+.view{
+    .banner-center {
+      background-color: rgba(0,0,0,.5);
+      color: #fff;
+      height:100%;
+    }
+    ul {
+      list-style-type: none;
+    }
+    box-shadow: 0 2px 5px rgba(0,0,0,.4)
+}
 
 /* 
 *=== Home Page ====
 */
-
-.view{
-    background:
-    url("2017SpringOfficers.jpg")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-   	#banner-center {
-  		background-color: rgba(0,0,0,.5);
-  		color: #fff;
-  		height:100%;
-	  }
-    ul {
-    	list-style-type: none;
-    }
-    box-shadow: 0 2px 5px rgba(0,0,0,.4)
-
+#homeview{
+  background: url("2017SpringOfficers.jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .titleCaption {
 	position: absolute;
@@ -134,7 +133,7 @@ ul {
   h1 {
   color: #fff;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 30px;
   line-height: 2em;
   display: inline-block;
@@ -272,7 +271,7 @@ ul {
  	} 	
  	.leftTopLine {
     border-left: solid transparent;
-    height:0em;
+    height: 0em;
     display:inline-block;
     border-right-color: #fff;
     -webkit-transition: height 0.75s ease;
@@ -288,7 +287,7 @@ ul {
 	.rightBotLine {
     float: right;
 		border-right: solid transparent;
-    height:2em;
+    height: 1em;
     display:inline-block;
     border-right-color: #fff;
     -webkit-transition: transform 0.75s;
@@ -300,7 +299,10 @@ ul {
     -webkit-transition-delay: 1s;
     -ms-transition-delay: 1s;
     transition-delay: 1s;
-    margin-top: -2em;
+    margin-top:0em;
+    /*
+    Change margin-top to -2em for chrome.
+    */
     transform-origin: 0 100%;
     transform: scaleY(0);
 	}
@@ -413,13 +415,15 @@ body.loaded {
 *--- About Us ---
 */
 #about {
-  padding-top: 4em;
+  padding-top: 8em;
+  padding-left: 2em;
+  padding-right: 2em;
   text-align: left;
   margin-left: 4em;
   margin-right:4em;
   h1 {
     margin-bottom: 0.35em;
-    font-weight: 400;
+    font-weight: 900;
     text-align: left;
   }
 	p {
@@ -459,7 +463,7 @@ body.loaded {
 /*
 *--- About Page --- 
 */
-.aboutView{
+#aboutview{
     background:
     url("homageBanner.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
