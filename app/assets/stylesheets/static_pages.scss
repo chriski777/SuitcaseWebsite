@@ -411,14 +411,11 @@ body.loaded {
     opacity: 1;
   }
 }
-/*
-*--- About Us ---
-*/
-#about {
+
+.page-section {
   padding-top: 8em;
   padding-left: 2em;
   padding-right: 2em;
-  text-align: left;
   margin-left: 4em;
   margin-right:4em;
   h1 {
@@ -426,20 +423,25 @@ body.loaded {
     font-weight: 900;
     text-align: left;
   }
+}
+
+
+/*
+*--- About Us ---
+*/
+#about {
+  text-align: left;
 	p {
     margin-top: 3.5em;
     margin-bottom: 3.5em;
 		line-height: 2.0em;
 	}
-  .about-img{
-    height: 100%;
-    width: 100%;
+  #about-img{
+    margin-top: 3.5em;
+    margin-bottom: 3.5em;    
+    height: 20em;
+    width: 30em;
     box-shadow: 0 2px 5px rgba(0,0,0,.4)
-
-  }
-  #about-1 {
-    padding-top: 3.5em;
-    padding-bottom: 3.5em;
   }
 }
 
