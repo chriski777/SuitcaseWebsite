@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
 $jared-lato: 'Lato', sans-serif;
-//Style Adjustments
+/* Style Adjustments */
 html,
 body, .view, .aboutView {
 	height: 100%;
@@ -9,7 +9,7 @@ body, .view, .aboutView {
   -moz-osx-font-smoothing: grayscale;
   font-family: $jared-lato;
   background-color: #F8F8F8;
-  color: rgba(44,62,80,0.9);
+  color: #121212;
 }
 h1 {
   font-family: $jared-lato;
@@ -26,6 +26,18 @@ ul {
 	padding:0em;
 }
 
+.section-heading h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.section-heading .line-dec {
+  width: 4.25em;
+  height: 0.15em;
+  background-color: #121212;
+  margin: 0 auto;
+}
+
 .view{
     .banner-center {
       background-color: rgba(0,0,0,.5);
@@ -38,6 +50,9 @@ ul {
     box-shadow: 0 2px 5px rgba(0,0,0,.4)
 }
 
+.left-text {
+  text-align: left;
+}
 /* 
 *=== Home Page ====
 */
@@ -48,6 +63,9 @@ ul {
   -o-background-size: cover;
   background-size: cover;
 }
+/*
+*--- Suitcase Graphic --- 
+*/
 .titleCaption {
 	position: absolute;
 	text-align: center;
@@ -412,54 +430,71 @@ body.loaded {
   }
 }
 
-.page-section {
-  padding-top: 8em;
-  padding-left: 2em;
-  padding-right: 2em;
-  margin-left: 4em;
-  margin-right:4em;
-  h1 {
-    margin-bottom: 0.35em;
-    font-weight: 900;
-    text-align: left;
-  }
+/*
+*--- Our Mission ---
+*/
+#mission {
+  padding: 6em 0em;
 }
 
-
+#mission .section-heading {
+  margin-bottom: 4em;
+}
+.service-item {
+  background-color: #fff;
+  text-align: center;
+  padding: 1.75em 20px;
+  transition: all 0.7s;
+  box-shadow: 0px 0px 15px #cdcdcd;
+}
+.icon {
+  color: rgba(44,62,80,0.9);
+}
+.service-item h4 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
 /*
 *--- About Us ---
 */
-#about {
-  text-align: left;
-	p {
-    margin-top: 3.5em;
-    margin-bottom: 3.5em;
-		line-height: 2.0em;
-	}
-  #about-img{
-    margin-top: 3.5em;
-    margin-bottom: 3.5em;    
-    height: 20em;
-    width: 30em;
-    box-shadow: 0 2px 5px rgba(0,0,0,.4)
-  }
+#what-we-do {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(campanile2.jpg) no-repeat; 
+  background-size: cover;
+  padding: 4em 0em;
+  color: #fff;
 }
 
-/*
-*--- Our Clinics ---
-*/
-#best-features {
-	.divider-new{
-		margin-bottom: 1em;
-	}
-	h4 {
-		margin-bottom: 1em;
-	}
+#what-we-do .right-image img {
+  width: 100%;
+  overflow: hidden;
 }
-#scLogo {
-	display:block;
-	margin:auto;
-	padding-top: 2em;
+
+#what-we-do h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+#what-we-do p {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+#what-we-do ul li {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 /*

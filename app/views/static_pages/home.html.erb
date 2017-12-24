@@ -45,91 +45,117 @@
                     <%= link_to "Apply Now", join_us_path, class: "btn btn-primary btn-lg apply"%> 
                 </li>
             </ul>
-            <%= link_to "", root_path(:anchor => "about"), class: "fa fa-angle-down page-scroll" %>
+            <%= link_to "", root_path(:anchor => "mission"), class: "fa fa-angle-down page-scroll" %>
         </div>
     </div>
 </div>
 <!--/.Mask-->
 </div>
-<!-- Main container-->
-<div class="container">
-    <!--Section: About-->
-    <section id="about" class = 'page-section'>
-        <h1> About Us</h1>
-        <div class = "row">
-            <div class="col-md-6" id = "about-1">
-                <p> The Suitcase Clinic is a humanitarian student organization and volunteer community offering free health and social services to underserved populations since 1989. </p> 
-                <%= link_to "Learn More", about_path, class: "btn btn-primary btn-lg "%>  
+<!-- Mission Section-->
+<div id="mission" class="page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h4>What We Do</h4>
+                    <div class="line-dec"></div>
+                </div>
             </div>
-            <div class="col-md-6" id = "about-1">
-                <%= image_tag("2017SpringOfficers.jpg", :id => "about-img") %>
-            </div>        
         </div>
-    </section>
-    <!--Section: About-->
-    <!--Section: Our Mission-->
-    <section id="mission" class = 'page-section'>
-        <h1> Our Mission</h1>
-        <div class = "row">
-            <div class="col-md-6" id = "about-1">
-                <p> Structured around the principles of public health, social welfare, community activism and empathy, the Suitcase Clinic strives to educate students, promote health care access, engage in community organization, and support public policy efforts that address homelessness and the needs of the underserved in the local community.</p> 
-                <%= link_to "Learn More", home_path, class: "btn btn-primary btn-lg "%>  
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="icon"><i class="fa fa-medkit fa-4x" aria-hidden="true"></i></div>
+                    <h4>Service Provision</h4>
+                    <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                </div>
             </div>
-            <div class="col-md-6" id = "about-1">
-                <%= image_tag("", :class => "about-img") %>
-            </div>        
+             <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="icon"><i class="fa fa-pencil fa-4x" aria-hidden="true"></i></div>
+                    <h4>Cooperative Learning</h4>
+                    <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                </div>
+            </div>
+             <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="icon"><i class="fa fa-users fa-4x" aria-hidden="true"></i></div>
+                    <h4> Community Building </h4>
+                    <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                </div>
+            </div>
+             <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="icon"><i class="fa fa-hand-rock-o fa-4x" aria-hidden="true"></i></div>
+                    <h4>Advocacy</h4>
+                    <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                </div>
+            </div>
         </div>
-    </section>
-    <!--Section: Our Mission-->
-    <!--Section: Our Clinics-->
-    <section id="about">
-        <h1> Our Clinics</h1>
-        <p> The Suitcase Clinic operates four clinics</p> 
-        Four Clinics with boxes and Pics, refer to Google for Nonprofits for support     
-        <div class = "row">
-            <div class= "col-sm-3">
-                <%= link_to "General", general_path, class: "btn btn-primary btn-lg "%> 
-            </div>
-            <div class= "col-sm-3">
-                <%= link_to "Youth LGBTQ+", youthLGBTQ_path, class: "btn btn-primary btn-lg "%> 
-            </div>
-            <div class= "col-sm-3">
-                <%= link_to "Womxn", womxn_path, class: "btn btn-primary btn-lg "%> 
-            </div>
-            <div class= "col-sm-3">
-                <%= link_to "Beth El", beth_el_path, class: "btn btn-primary btn-lg "%> 
-            </div>
-        </div>   
-    </section>
-    <section id="mission">
-        <h1> Our Clinics</h1>
-        <p> The Suitcase Clinic operates four clinics</p> 
-        Four Clinics with boxes and Pics, refer to Google for Nonprofits for support     
-        <div class = "row">
-            <div class= "col-sm-3">
-                <%= link_to "General", general_path, class: "btn btn-primary btn-lg "%> 
-            </div>
-            <div class= "col-sm-3">
-                <%= link_to "Youth LGBTQ+", youthLGBTQ_path, class: "btn btn-primary btn-lg "%> 
-            </div>
-            <div class= "col-sm-3">
-                <%= link_to "Womxn", womxn_path, class: "btn btn-primary btn-lg "%> 
-            </div>
-            <div class= "col-sm-3">
-                <%= link_to "Beth El", beth_el_path, class: "btn btn-primary btn-lg "%> 
-            </div>
-        </div>   
-    </section>
-    <section id="about">
-        <h1> Stay Up to Date</h1>
-        <div class = "row">
-        Link to News, Link to Services, Link to Blog      
-        </div>
-    </section>
-    <!--Section: Our Clinics-->
-    <section id="about">
-        <h1> Contact Us</h1>
-        <p> Have any questions? Center this region with a background banner picture.  </p>         
-    </section>
+    </div>
 </div>
-<!--/ Main container-->
+<!--/ About Section -->
+    <div id="what-we-do">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left-text">
+                        <h4>About Us</h4>
+                        <p>The Suitcase Clinic is a humanitarian student organization and volunteer community offering free health and social services to underserved populations since 1989. Structured around the principles of public health, social welfare, community activism and empathy, the Suitcase Clinic strives to educate students, promote health care access, engage in community organization, and support public policy efforts that address homelessness and the needs of the underserved in the local community.</p>
+                        <ul>
+                            <li>
+                                <%= link_to "Learn More", about_path, class: "btn btn-primary"%> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Clinics Section-->
+<div id="mission" class="page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h4>Our Clinics</h4>
+                    <div class="line-dec"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="icon"><i class="fa fa-medkit fa-4x" aria-hidden="true"></i></div>
+                    <h4>General Clinic</h4>
+                    <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                </div>
+            </div>
+             <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="icon"><i class="fa fa-pencil fa-4x" aria-hidden="true"></i></div>
+                    <h4>Youth LGBTQ+ Clinic</h4>
+                    <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                </div>
+            </div>
+             <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="icon"><i class="fa fa-users fa-4x" aria-hidden="true"></i></div>
+                    <h4> Womxn's Clinic </h4>
+                    <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                </div>
+            </div>
+             <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="icon"><i class="fa fa-hand-rock-o fa-4x" aria-hidden="true"></i></div>
+                    <h4>Beth El Clinic</h4>
+                    <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
