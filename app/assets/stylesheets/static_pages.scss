@@ -27,6 +27,7 @@ ul {
 }
 
 .section-heading h4 {
+  font-size: 1.25em;
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
@@ -57,7 +58,7 @@ ul {
 *=== Home Page ====
 */
 #homeview{
-  background: url("2017SpringOfficers.jpg")no-repeat center center fixed;
+  background: url("fall2017Officers.jpg")no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -433,70 +434,80 @@ body.loaded {
 /*
 *--- Our Mission ---
 */
-#mission {
+.page-section {
   padding: 6em 0em;
+  .section-heading {
+    margin-bottom: 3em;
+  }
 }
 
-#mission .section-heading {
-  margin-bottom: 4em;
-}
 .service-item {
   background-color: #fff;
   text-align: center;
-  padding: 1.75em 20px;
+  padding: 1.75em 1.5em;
   transition: all 0.7s;
-  box-shadow: 0px 0px 15px #cdcdcd;
+  box-shadow: 0em 0em 1em #cdcdcd;
+  h4 {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    margin-top: 25px;    
+  }
+  p { 
+    font-size: 0.80em;
+  }
 }
 .icon {
   color: rgba(44,62,80,0.9);
 }
-.service-item h4 {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  margin-bottom: 15px;
-  margin-top: 25px;
-}
 /*
 *--- About Us ---
 */
-#what-we-do {
+#about-us {
   background: 
     linear-gradient(
       rgba(0, 0, 0, 0.65), 
       rgba(0, 0, 0, 0.65)
     ),
     url(campanile2.jpg) no-repeat; 
-  background-size: cover;
+  background-size: 100% 135%;
   padding: 4em 0em;
   color: #fff;
 }
 
-#what-we-do .right-image img {
+#about-us .style_image {
   width: 100%;
+  height: 50%;
   overflow: hidden;
 }
 
-#what-we-do h4 {
-  font-size: 24px;
+#about-us h4 {
+  font-size: 1.25em;
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 0.5px;
-  line-height: 30px;
-  margin-bottom: 25px;
+  line-height: 1.5em;
+  margin-bottom: 1.25em;
 }
 
-#what-we-do p {
+#about-us p {
   margin-bottom: 30px;
+  font-size: 1em;
   color: #fff;
 }
 
-#what-we-do ul li {
+#about-us ul li {
   display: inline-block;
   margin-right: 15px;
   margin-bottom: 15px;
 }
 
+#clinics .style_image {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
 /*
 *--- About Page --- 
 */
