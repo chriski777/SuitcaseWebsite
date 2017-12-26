@@ -67,13 +67,13 @@
                 <div class="service-item">
                     <div class="icon"><i class="fa fa-medkit fa-4x" aria-hidden="true"></i></div>
                     <h4>Service Provision</h4>
-                    <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                    <p>The Suitcase Clinic provides caseworking and professional services ranging from </p>
                 </div>
             </div>
              <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="service-item">
                     <div class="icon"><i class="fa fa-pencil fa-4x" aria-hidden="true"></i></div>
-                    <h4>Cooperative Learning</h4>
+                    <h4>Education</h4>
                     <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
                 </div>
             </div>
@@ -101,10 +101,11 @@
                 <div class="col-md-6">
                     <div class="left-text">
                         <h4>About Us</h4>
-                        <p>The Suitcase Clinic is a humanitarian UC Berkeley student organization and volunteer community offering free health and social services to underserved populations since 1989. Structured around the principles of public health, social welfare, community activism and empathy, the Suitcase Clinic strives to educate students, promote health care access, engage in community organization, and support public policy efforts that address homelessness and the needs of the underserved in the local community.</p>
+                        <p>The Suitcase Clinic is a humanitarian UC Berkeley student organization and volunteer community offering free health and social services to underserved populations since 1989. 
+                        <br></br> Structured around the principles of public health, social welfare, community activism and empathy, the Suitcase Clinic strives to educate students, promote health care access, engage in community organization, and support public policy efforts that address homelessness and the needs of the underserved in the local community.</p>
                         <ul>
                             <li>
-                                <%= link_to "Learn More", about_path, class: "btn btn-primary"%> 
+                                <%= link_to "Learn More", about_path, class: "btn btn-primary btn-lg"%> 
                             </li>
                         </ul>
                     </div>
@@ -126,35 +127,52 @@
                     <h4>Our Clinics</h4>
                     <div class="line-dec"></div>
                 </div>
+                <p> The Suitcase Clinic currently operates four clinics: 
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="service-item">
-                    <%= image_tag('gen_clinic.jpg', :class => "style_image" )%>
-                    <h4>General Clinic</h4>
-                    <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="clinic-card">
+                    <%= link_to general_path, :action => 'go' do %>
+                        <%= image_tag('gen_clinic2017Fall.jpg', :class => "clinic_image" )%>
+                        <div class = "clinic_text">
+                            <h4>General Clinic</h4>
+                            <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                        </div>
+                    <% end %>
                 </div>
             </div>
-             <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="service-item">
-                    <%= image_tag('youth_clinic.jpg', :class => "style_image" )%>
-                    <h4>Youth LGBTQ+ Clinic</h4>
-                    <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="clinic-card">
+                    <%= link_to youthLGBTQ_path, :action => 'go' do %>
+                        <%= image_tag('youth_clinic2017Fall.jpg', :class => "clinic_image" )%>
+                        <div class = "clinic_text">
+                            <h4>Youth LGBTQ+ Clinic</h4>
+                            <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                        </div>
+                    <% end %>
                 </div>
             </div>
-             <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="service-item">
-                    <%= image_tag('women_clinic.jpg', :class => "style_image" )%>
-                    <h4> Womxn's Clinic </h4>
-                    <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+             <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="clinic-card">
+                    <%= link_to womxn_path, :action => 'go' do %>
+                        <%= image_tag('fall2017Officers copy.jpg', :class => "clinic_image" )%>
+                        <div class = "clinic_text">
+                            <h4> Womxn's Clinic </h4>
+                            <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                        </div>
+                    <% end %>
                 </div>
             </div>
-             <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="service-item">
-                    <%= image_tag('gen_clinic.jpg', :class => "style_image" )%>
-                    <h4>Beth El Clinic</h4>
-                    <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+             <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="clinic-card">
+                    <%= link_to beth_el_path, :action => 'go' do %>
+                        <%= image_tag('gen_clinic2017Fall.jpg', :class => "clinic_image" )%>
+                        <div class = "clinic_text">
+                            <h4>Beth El Clinic</h4>
+                            <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                        </div>
+                    <% end %>
                 </div>
             </div>
         </div>

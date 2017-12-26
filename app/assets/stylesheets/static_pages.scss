@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+ @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 $jared-lato: 'Lato', sans-serif;
 /* Style Adjustments */
 html,
@@ -345,7 +346,6 @@ ul {
     margin-left: 1.25em;
     margin-right: 1.25em;
   }
-
   .btn-primary:focus{
     box-shadow: none; 
     -webkit-box-shadow: none;
@@ -474,40 +474,83 @@ body.loaded {
   background-size: 100% 135%;
   padding: 4em 0em;
   color: #fff;
+  h4 {
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+    margin-bottom: 1.25em;
+  }
+  .style_image {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+  }
+  .btn {
+    background-color: transparent;
+    font-size: 0.85em;
+    line-height: 1.75em;
+    border-color: #6e6d6c;
+    font-weight:900;
+    outline:none;
+    width: 9.875em;
+  }
+  .btn-primary:focus{
+    box-shadow: none; 
+    -webkit-box-shadow: none;
+    outline: none;
+  }
+  .btn-primary:hover{
+    background-color: rgba(0,0,0,0.3);
+    color: #cccccc;
+  }
+  p {
+    margin-bottom: 30px;
+    font-size: 0.9em;
+    color: #fff;
+  }
+  ul li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
 }
 
-#about-us .style_image {
-  width: 100%;
-  height: 50%;
-  overflow: hidden;
+
+#clinics {
+  .clinic-card { 
+    box-shadow: 0em 0em 1em #cdcdcd;
+    margin-bottom: 2em;
+    background-color:#fff;
+    position: relative;
+    h4 {
+      font-size: 1.5em;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+    p { 
+      font-size: 0.80em;
+      margin-bottom: 0em;
+    } 
+   }
+  .clinic_image {
+    width: 100%;
+    height: 13.5em;
+    overflow: hidden;
+  }
+  .clinic_text {
+    text-align: center;
+    padding: 1em 1em;
+    background-color: #FFF;
+  }
+  p { 
+    font-size: 0.9em;
+    margin-bottom: 3em;
+    color: #5a5a5a;
+  }
 }
 
-#about-us h4 {
-  font-size: 1.25em;
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 0.5px;
-  line-height: 1.5em;
-  margin-bottom: 1.25em;
-}
 
-#about-us p {
-  margin-bottom: 30px;
-  font-size: 1em;
-  color: #fff;
-}
-
-#about-us ul li {
-  display: inline-block;
-  margin-right: 15px;
-  margin-bottom: 15px;
-}
-
-#clinics .style_image {
-  width: 100%;
-  height: 50%;
-  overflow: hidden;
-}
 /*
 *--- About Page --- 
 */
