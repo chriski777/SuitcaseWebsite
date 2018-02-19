@@ -307,7 +307,7 @@ ul {
 	.rightBotLine {
     float: right;
 		border-right: solid transparent;
-    height: 1em;
+    height: 0em;
     display:inline-block;
     border-right-color: #fff;
     -webkit-transition: transform 0.75s;
@@ -549,7 +549,14 @@ body.loaded {
     color: #5a5a5a;
   }
 }
-
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+  .titleCaption {
+    .rightBotLine {
+      margin-top:-2em;
+    }
+  }
+}
 
 /*
 *--- About Page --- 
