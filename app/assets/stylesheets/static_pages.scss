@@ -526,8 +526,8 @@ body.loaded {
     margin-bottom: 2em;
     position: relative;
     transition: 200ms;
+    box-shadow: 0em 0em 1em #cdcdcd;
     &:hover {
-      box-shadow: 0em 0em 1em #cdcdcd;
       transform: translateY(-0.3em);
     }
     h4 {
