@@ -59,13 +59,13 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get youth" do
-    get youth_path
+    get youthLGBTQ_path
     assert_response :success
     assert_select "title", "Youth | #{@base_title}"
   end
 
   test "should get women" do
-    get women_path
+    get womxn_path
     assert_response :success
     assert_select "title", "Women | #{@base_title}"
   end

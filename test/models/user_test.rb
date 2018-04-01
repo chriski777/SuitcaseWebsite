@@ -7,7 +7,8 @@ class UserTest < ActiveSupport::TestCase
 
   #setup is a special function that is run before the test is run.
   def setup
-    @user = User.new(name: "Example User", email: "user@example.com")
+    @user = User.new(name: "Example User", email: "user@example.com",
+      password: "foobar123", password_confirmation: "foobar123")
   end
 
   test "should be valid" do
@@ -66,4 +67,14 @@ class UserTest < ActiveSupport::TestCase
     @user.save
     assert_equal mixed_case_email.downcase, @user.reload.email
   end
+  test "password should be present (nonblank)" do
+    @user.password = @user.password_confirmation = " " * 8
+    assert_not @user.valid?
+  end
+
+  test "password should have a minimum length" do
+    @user.password = @user.password_confirmation = "a" * 4
+    assert_not @user.valid?
+  end
+
 end
